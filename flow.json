@@ -3,8 +3,7 @@
     "FungibleToken": {
       "source": "./contracts/FungibleToken.cdc",
       "aliases": {
-        "emulator": "0xee82856bf20e2aa6",
-        "testnet": "0x9a0766d93b6608b7",
+				"testnet": "0x9a0766d93b6608b7",
         "mainnet": "0xf233dcee88fe0abe"
       }
     },
@@ -25,7 +24,11 @@
         "emulator-account": {
             "address": "f8d6e0586b0a20c7",
             "key": "83c4da8100a5bb0086fd0835e0b48dbdf507ca4aa15dab56edccee06c82eb110"
-        }
+        }, 
+				"emulator-alice" : {
+					"address" : "01cf0e2f2f715450",
+					"key": "83c4da8100a5bb0086fd0835e0b48dbdf507ca4aa15dab56edccee06c82eb110"
+					}
     },
     "deployments": {
         "emulator": {
@@ -35,8 +38,10 @@
                 "NonFungibleToken",
                 "MetadataViews",
                 "FungibleTokenMetadataViews",
-                "FungibleTokenSwitchboard"
-            ]
-        }
+								"FungibleTokenSwitchboard",
+								"TokenForwarding"
+            ],
+							"emulator-alice": []
+						}
     }
 }
